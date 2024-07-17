@@ -5,41 +5,36 @@ In this section we will be connecting our smart contract with the frontend and a
 It contains 3 Files namely app.js, index.html and bank.sol in the 3 folders.
 
 ## Getting Started
-To run this program, you can use gitpod by clicking the link https://metacrafterc-scmstarter-endrfexphsa.ws-us114.gitpod.io/
+To run this program, you can use REMIX IDE by clicking the link https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js
 
 ### Executing program for frontend and smart contract
 1. copy and paste the index.html, bank.sol and app.js from the repository into your gitpod website.
 2. Remember index. html contains the frontend code.
 3. Open two additional terminals in vscode
 
-   // SPDX-License-Identifier: MIT
-    pragma solidity ^0.8.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-    contract Counter {
-    
-    uint256 public count;
+    contract Bank {
+    int private bal;
 
-    // Function to get the current count
-    function getCount() public view returns (uint256) {
-        return count;
+    constructor() {
+        bal = 1;
     }
 
-    // Function to increment the count
-    function increment(){ public 
-        count += 1;
+    function getBalance() public view returns (int) {
+        return bal;
     }
 
-    // Function to decrement the count
-    function decrement() public {
-        require(count > 0, "Count is already zero");
-        count -= 1;
+    function withdraw(int amt) public {
+        bal = bal - amt;
     }
 
-    // Function to reset the count
-    function reset() public {
-        count = 0;
+    function deposit(int amt) public {
+        bal = bal + amt;
     }
     }
+
 
 
 ### wallet setup
