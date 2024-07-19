@@ -1,5 +1,5 @@
 # Interact your smart-contract with frontend and connect it to MetaMask Wallet
-In this section we will be connecting our smart contract with the frontend and a METAMASK wallet to deposite or withdraw Ethers.
+In this section we will be connecting our smart contract with the frontend and a METAMASK wallet to increment and decrement Ethers.
 
 ## Description
 It contains 3 Files namely app.js, index.html and bank.sol in the 3 folders.
@@ -8,7 +8,7 @@ It contains 3 Files namely app.js, index.html and bank.sol in the 3 folders.
 To run this program, you can use REMIX IDE by clicking the link https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js
 
 ### Executing program for frontend and smart contract
-1. copy and paste the index.html, bank.sol and app.js from the repository into your gitpod website.
+1. copy and paste the index.html, bank.sol and app.js from the repository into vs code and remix
 2. Remember index. html contains the frontend code.
 3. Open two additional terminals in vscode
 
